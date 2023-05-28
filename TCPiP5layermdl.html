@@ -7,6 +7,101 @@
         <p>
             layer 1
             Physical layer - represents physical devices that interconnect computers. 
+            Includes the specifications for the networking cables and also deals with cabling and connectors.
+            connectors that join devices together along with specifications describing how signals are sent over these connections
+        </p>
+
+        <p>
+            layer 2
+            Data link or network access layer: - is responsible for defining a common way of interpreting these signals so network devices can communicate. 
+            Lots of protocols exist at the data link layer but the most common is ethernet. 
+            It's this layer that allows different networks to communicate with each other through devices known as routers.
+            on this layer the Ethernet standards and some wireless technologies operate . 
+        </p> 
+
+        <p>
+            layer 3
+            Network layer /Internetwork - A collection of networks connected together through routers, eg internet.
+            IP is an example of a network layer (layer 3) protocol in the five-layer TCP/IP model.
+            Router operates on network layer.
+        </p> 
+        <p>
+            layer 4
+            transport layer- While the network layer delivers data between two individual nodes, the transport layer sorts out which client and server programs are supposed to get that data.
+        </p>
+
+        <p>
+            layer 5
+            Application layer - contains different protocols eg Protocols used to allow you to browse the web or send and receive email.
+            A Browser - is an example of something that works on the application layer (layer 5 of the five-layer TCP/IP model)
+        </p>
+
+        <p>            
+        1. Application layer - is concerned with application or process communication. eg SMTP for email. includes HTTP, DNS, IMAP, SMTP, SNMP, SSH, TLS , SSL.
+        2. Transport layer -The protocols associated with this layer are TCP and UDP. TCP is responsible for flow control. UDP is responsible for providing a datagram service. Has TCP and UDP.
+        3. Internet layer -responsible for exchanging datagrams. A datagram contains the data from the transport layer and adds in the origin and recipient IP addresses.protocols are IP,IPV4, IPV6, ICMP, IPsec.
+        4. Network access layer -defining how the data is sent across the network.protocols eg ARP,MAC, Ethernet, digital subscriber line (DSL), and Integrated Services Digital Network (ISDN).
+        </p>
+        
+        <P>
+            A switch can connect many devices and inspect the contents of ethernet protocol data.
+            A router connects independent networks by forwarding data between them.
+            Server - Something providing data to something requesting data is operating as a server.
+            Copper wires are used in cables that communicate in voltage changes that are received by the receiving device as ones and zeros.
+
+        </P>
+
+        <p>
+            cables: 
+            1. copper cables <br>
+            They're made up of multiple pairs of copper wires inside plastic insulator. 
+            The sending device communicates binary data across these copper wires by changing the voltage between two ranges. The system at the receiving end is able to interpret these voltage changes as binary ones and zeros which can then be translated into different forms of data.
+            The most common forms of copper twisted pair cables used in networking are Cat5, Cat5e and Cat6 cables.
+            <br>
+            2. fiber optic cables- Fiber cables contain individual optical fibers which are tiny tubes made out of glass about the width of a human hair. 
+            These tubes of glass can transport beams of light. They use pulses of light to represent the ones and zeros of the underlying data. Transport data quicker than copper cables.
+            Fiber can also transport data over much longer distances than copper can without suffering potential data loss.            
+        </p>
+
+        <p>
+            A hub- is a physical layer (layer 1 device) device that allows for connections from many computers at once. 
+            All the devices connected to a hub will end up talking to all other devices at the same time.  It's up to each system connected to the hub to determine if the incoming data was meant for them or to ignore it if it isn't.
+            This causes a lot of noise on the network and creates what's called a collision domain.
+            <br>
+            switch - is a data link layer (layer 2) device.
+            A switch can inspect the contents of the ethernet protocol data being sent around the network, determine which system the data is intended for and then only send that data to that one system.
+            This eliminates the size of collision domains on a network.
+            <br>
+            router- Is a network layer (layer 3) device.
+            It is a device that knows how to forward data between independent networks. 
+            a router can inspect IP data to determine where to send things. Routers store internal tables containing information about how to route traffic between lots of different networks all over the world.
+            <br>
+            BGP - Routers share data with each other via a protocol known as BGP or Border Gateway Protocol. That lets them learn about the most optimal paths to forward traffic.             
+        </p>
+        
+        <P>
+            Crosstalk is when an electrical pulse on one wire is accidentally detected on another wire, so the receiving end isn't able to understand the data causing a network error.
+            <br>
+            A collision domain is a network segment where only one device can communicate at a time. If multiple systems try sending data at the same time, the electrical pulses sent across the cable can interfere with each other. 
+            This causes these systems to have to wait for a quiet period before they try sending their data again. 
+        </P>      
+
+    </body>
+</html>
+
+.
+.
+.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        TCP/IP 5 layer model
+    </head>
+    <body>
+        <p>
+            layer 1
+            Physical layer - represents physical devices that interconnect computers. 
             It includes the specifications for the networking cables and also deals with cabling and connectors.,
             connectors that join devices together along with specifications describing how signals are sent over these connections
         </p> 
