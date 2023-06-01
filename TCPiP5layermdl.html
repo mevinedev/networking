@@ -27,7 +27,7 @@
         </p> 
         <p>
             layer 4
-            Transport layer- While the network layer delivers data between two individual nodes, the transport layer sorts out which client and server programs are supposed to get that data.
+            transport layer- While the network layer delivers data between two individual nodes, the transport layer sorts out which client and server programs are supposed to get that data.
         </p>
 
         <p>
@@ -53,13 +53,12 @@
 
         <p>
             cables: 
-            1. Copper cables <br>
+            1. copper cables <br>
             They're made up of multiple pairs of copper wires inside plastic insulator. 
             The sending device communicates binary data across these copper wires by changing the voltage between two ranges. The system at the receiving end is able to interpret these voltage changes as binary ones and zeros which can then be translated into different forms of data.
             The most common forms of copper twisted pair cables used in networking are Cat5, Cat5e and Cat6 cables.
             <br>
-            
-            2. Fiber optic cables- Fiber cables contain individual optical fibers which are tiny tubes made out of glass about the width of a human hair. 
+            2. fiber optic cables- Fiber cables contain individual optical fibers which are tiny tubes made out of glass about the width of a human hair. 
             These tubes of glass can transport beams of light. They use pulses of light to represent the ones and zeros of the underlying data. Transport data quicker than copper cables.
             Fiber can also transport data over much longer distances than copper can without suffering potential data loss.            
         </p>
@@ -69,13 +68,11 @@
             All the devices connected to a hub will end up talking to all other devices at the same time.  It's up to each system connected to the hub to determine if the incoming data was meant for them or to ignore it if it isn't.
             This causes a lot of noise on the network and creates what's called a collision domain.
             <br>
-            
-            Switch - is a data link layer (layer 2) device.
+            switch - is a data link layer (layer 2) device.
             A switch can inspect the contents of the ethernet protocol data being sent around the network, determine which system the data is intended for and then only send that data to that one system.
             This eliminates the size of collision domains on a network.
             <br>
-            
-            Router- Is a network layer (layer 3) device.
+            router- Is a network layer (layer 3) device.
             It is a device that knows how to forward data between independent networks. 
             a router can inspect IP data to determine where to send things. Routers store internal tables containing information about how to route traffic between lots of different networks all over the world.
             <br>
@@ -87,63 +84,186 @@
             <br>
             A collision domain is a network segment where only one device can communicate at a time. If multiple systems try sending data at the same time, the electrical pulses sent across the cable can interfere with each other. 
             This causes these systems to have to wait for a quiet period before they try sending their data again. 
-        </P>      
-
-    </body>
-</html>
-
-.
-.
-.
-
-
-<!DOCTYPE html>
-<html>
-    <head>
-        TCP/IP 5 layer model
-    </head>
-    
-    <body>
-        
+        </P> 
+        <P>
+            Line coding (the modulation type that is used for computer networks)is the modulation of an electrical charge so that each side of a connection knows what is a one and what is a zero.
+            A half duplex connection allows communication in both directions, but only one side can communicate at a time.
+            Full duplex allows communications in two directions at the same time; 
+            The physical layer is the first layer of the TCP/IP Five-Layer Network Model and is in charge of transmitting the bits across computer networks.
+            the most common type of cabling used for connecting computing devices IS Twisted pair cable (features pairs of copper wires that are twisted together)
+            category types of Twisted Pair Ethernet cable are: 
+            1. Shielded twisted pair STP- An STP cable uses a braided aluminum and/or copper shielding to encase the four twisted pairs underneath the outer jacket.
+            2. Unshielded twisted pair UTP- The most common and least expensive type of Ethernet cable found in business and home networks.
+            3. Foiled Twisted Pair FTP- An FTP cable uses a thin foil shield that wraps around the bundle of twisted pair wires underneath the outer jacket. 
+        </P> 
         <p>
-            layer 1
-            Physical layer - represents physical devices that interconnect computers. 
-            It includes the specifications for the networking cables and also deals with cabling and connectors.,
-            connectors that join devices together along with specifications describing how signals are sent over these connections
+            A MAC address is a globally unique identifier attached to an individual network interface. It's a 48-bit number normally represented by six groupings of two hexadecimal numbers or in octets.
+            <br>
+            A MAC address is split into two sections. The first three octets of a MAC address are known as the organizationally unique identifier or OUI. These are assigned to individual hardware manufacturers by the IEEE. 
+            <br>
+            Ethernet uses MAC addresses to ensure that the data it sends has both an address for the machine that sent the transmission, as well as, the one that the transmission was intended for.
         </p> 
-        
         <p>
-            layer 2
-            Data link or network access layer: - is responsible for defining a common way of interpreting these signals so network devices can communicate. 
-            Lots of protocols exist at the data link layer but the most common is ethernet. 
-            This layer allows different networks to communicate with each other through devices known as routers.
-            Ethernet standards and some wireless technologies operate on this layer . 
-        </p> 
-        
-        <p>
-            layer 3
-            Network layer /Internetwork - A collection of networks connected together through routers, eg internet.
-            IP is an example of a network layer (layer 3) protocol in the five-layer TCP/IP model.
-            Router operates on network layer.
-        </p> 
-        
-        <p>
-            layer 4
-            Transport layer- While the network layer delivers data between two individual nodes, the transport layer sorts out which client and server programs are supposed to get that data.
+            Types of ethernet transmission: <br>
+            A unicast transmission is always meant for just one receiving address
+            multicast - data would be sent to all devices on the collision domain, but only actually received and processed by the intended destination.
+            broadcast -broadcast is sent to every single device on a LAN. This is accomplished by using a special destination known as a broadcast address. 
         </p>
-        
         <p>
-            layer 5
-            Application layer - contains different protocols eg Protocols used to allow you to browse the web or send and receive email.
-            A Browser - is an example of something that works on the application layer (layer 5 of the five-layer TCP/IP model).
+            A data packet is an all-encompassing term that represents any single set of binary data being sent across a network link.
+            Ethernet frames- Data packets at the Ethernet level.
+            An Ethernet frame is a highly structured collection of information presented in a specific order. This way, network interfaces at the physical layer can convert a stream of bits traveling across a link into meaningful data or vice versa. 
+            <br>
+            The first part of an Ethernet frame is known as the preamble. A preamble is eight bytes or 64 bits long, and can itself be split into two sections. The first seven bytes are a series of alternating ones and zeros.
+            These act partially as a buffer between frames and can also be used by the network interfaces to synchronize internal clocks they use to regulate the speed at which they send data. This last byte in the preamble is known as the SFD, or start frame delimiter. 
+            This signals to a receiving device that the preamble is over and that the actual frame contents will now follow.
+            <br>
+            The destination MAC address- This is the hardware address of the intended recipient, which is then followed by the source MAC address or where the frame originated from.
+            <br>
+            A payload in networking terms is the actual data being transported, which is everything that isn't a header.
+            frame check sequence. This is a four-byte or 32-bit number that represents a checksum value for the entire frame. This checksum value is calculated by performing what's known as a cyclical redundancy check against the frame.
+            <br>
+            A cyclical redundancy check, or CRC,is a mathematical transformation that uses polynomial division to create a number that represents a larger set of data. Anytime you perform a CRC against a set of data, you should end up with the same checksum number. 
+            Ethernet itself only reports on data integrity, it doesn't perform data recovery.
         </p>
+        <p>
+            A cyclical redundancy check ensures that there was no data corruption.
+            ways for transmitting data at the Ethernet level:
+            Unicast transmission is when one device transmits data to another device. A unicast transmission is always meant for just one receiving address.,
+            Multicast transmission is when one device transmits data to multiple devices. 
+            Broadcast transmission is when one device sends data to every single device on a LAN. 
+            <br>
+            Parts of an ethernet frame: 
+            data payload -  This contains all of the data from higher layers, such as IP, transport, and application layers, that's actually being transmitted.
+            preamble - The preamble is the first part of an Ethernet frame.
+            EtherType field - is 16 bits long and used to describe the protocol of the contents of the frame.
+            MAC adress is a 48bit number consisting of 6 octets. 
+            The address FF:FF:FF:FF:FF:FF is used for Ethernet broadcast traffic. 
+        </p>
+        <p>
+            Glossary: <br>
+            
+Bit: The smallest representation of data that a computer can understand
 
-        <p>            
-        1. Application layer - is concerned with application or process communication. eg SMTP for email. includes HTTP, DNS, IMAP, SMTP, SNMP, SSH, TLS , SSL.
-        2. Transport layer -The protocols associated with this layer are TCP and UDP. TCP is responsible for flow control. UDP is responsible for providing a datagram service. Has TCP and UDP.
-        3. Internet layer -responsible for exchanging datagrams. A datagram contains the data from the transport layer and adds in the origin and recipient IP addresses.protocols are IP,IPV4, IPV6, ICMP, IPsec.
-        4. Network access layer -defining how the data is sent across the network.protocols eg ARP,MAC, Ethernet, digital subscriber line (DSL), and Integrated Services Digital Network (ISDN).
-        </p>      
+Border Gateway Protocol (BGP): A protocol by which routers share data with each other
+
+Broadcast: A type of Ethernet transmission, sent to every single device on a LAN
+
+Broadcast address: A special destination used by an Ethernet broadcast composed by all Fs
+
+Cable categories: Groups of cables that are made with the same material. Most network cables used today can be split into two categories, copper and fiber
+
+Cables: Insulated wires that connect different devices to each other allowing data to be transmitted over them
+
+Carrier-Sense Multiple Access with Collision Detection (CSMA/CD): CSMA/CD is used to determine when the communications channels are clear and when the device is free to transmit data
+
+Client: A device that receives data from a server
+
+Collision domain: A network segment where only one device can communicate at a time
+
+Computer networking: The full scope of how computers communicate with each other
+
+Copper cable categories : These categories have different physical characteristics like the number of twists in the pair of copper wires. These are defined as names like category (or cat) 5, 5e, or 6, and how quickly data can be sent across them and how resistant they are to outside interference are all related to the way the twisted pairs inside are arranged
+
+Crosstalk: Crosstalk is when an electrical pulse on one wire is accidentally detected on another wire
+
+Cyclical Redundancy Check (CRC): A mathematical transformation that uses polynomial division to create a number that represents a larger set of data. It is an important concept for data integrity and is used all over computing, not just network transmissions
+
+Data packet: An all-encompassing term that represents any single set of binary data being sent across a network link
+
+Datalink layer: The layer in which the first protocols are introduced. This layer is responsible for defining a common way of interpreting signals, so network devices can communicate
+
+Destination MAC address: The hardware address of the intended recipient that immediately follows the start frame delimiter
+
+Duplex communication: A form of communication where information can flow in both directions across a cable
+
+Ethernet: The protocol most widely used to send data across individual links
+
+Ethernet frame: A highly structured collection of information presented in a specific order
+
+EtherType field: It follows the Source MAC Address in a dataframe. It's 16 bits long and used to describe the protocol of the contents of the frame
+
+Fiber cable: Fiber optic cables contain individual optical fibers which are tiny tubes made of glass about the width of a human hair. Unlike copper, which uses electrical voltages, fiber cables use pulses of light to represent the ones and zeros of the underlying data
+
+Five layer model: A model used to explain how network devices communicate. This model has five layers that stack on top of each other: Physical, Data Link, Network, Transport, and Application
+
+Frame check sequence: It is a 4-byte or 32-bit number that represents a checksum value for the entire frame
+
+Full duplex: The capacity of devices on either side of a networking link to communicate with each other at the exact same time
+
+Half-duplex: It means that, while communication is possible in each direction, only one device can be communicating at a time
+
+Hexadecimal: A way to represent numbers using a numerical base of 16
+
+Hub: It is a physical layer device that broadcasts data to everything computer connected to it
+
+Internet Protocol (IP): The most common protocol used in the network layer
+
+Internet Service Provider (ISP): A company that provides a consumer an internet connection
+
+Internetwork: A collection of networks connected together through routers - the most famous of these being the Internet
+
+Line coding: Modulation used for computer networks
+
+Local Area Network (LAN): A single network in which multiple devices are connected
+
+MAC(Media Access Control) address: A globally unique identifier attached to an individual network interface. It's a 48-bit number normally represented by six groupings of two hexadecimal numbers
+
+Modulation: A way of varying the voltage of a constant electrical charge moving across a standard copper network cable
+
+Multicast frame: If the least significant bit in the first octet of a destination address is set to one, it means you're dealing with a multicast frame. A multicast frame is similarly set to all devices on the local network signal, and it will be accepted or discarded by each device depending on criteria aside from their own hardware MAC address
+
+Network layer: It's the layer that allows different networks to communicate with each other through devices known as routers. It is responsible for getting data delivered across a collection of networks
+
+Network port: The physical connector to be able to connect a device to the network. This may be attached directly to a device on a computer network, or could also be located on a wall or on a patch panel
+
+Network switch: It is a level 2 or data link device that can connect to many devices so they can communicate. It can inspect the contents of the Ethernet protocol data being sent around the network, determine which system the data is intended for and then only send that data to that one system
+
+Node: Any device connected to a network. On most networks, each node will typically act as a server or a client
+
+Octet: Any number that can be represented by 8 bits
+
+Organizationally Unique Identifier (OUI): The first three octets of a MAC address
+
+OSI model: A model used to define how network devices communicate. This model has seven layers that stack on top of each other: Physical, Data Link, Network, Transport, Session, Presentation, and Application
+
+Patch panel: A device containing many physical network ports 
+
+Payload: The actual data being transported, which is everything that isn't a header
+
+Physical layer: It represents the physical devices that interconnect computers
+
+Preamble: The first part of an Ethernet frame, it is 8 bytes or 64 bits long and can itself be split into two sections
+
+Protocol: A defined set of standards that computers must follow in order to communicate properly is called a protocol
+
+Router: A device that knows how to forward data between independent networks
+
+Server: A device that provides data to another device that is requesting that data, also known as a client
+
+Simplex communication: A form of data communication that only goes in one direction across a cable
+
+Source MAC address: The hardware address of the device that sent the ethernet frame or data packet. In the data packet it follows the destination MAC address
+
+Start Frame Delimiter (SFD): The last byte in the preamble, that signals to a receiving device that the preamble is over and that the actual frame contents will now follow
+
+Transmission Control Protocol (TCP): The data transfer protocol most commonly used in the fourth layer. This protocol requires an established connection between the client and server
+
+Transport layer: The network layer that sorts out which client and server programs are supposed to get the data
+
+Twisted pair cable: The most common type of cabling used for connecting computing devices. It features pairs of copper wires that are twisted together
+
+Unicast transmission: A unicast transmission is always meant for just one receiving address
+
+User Datagram Protocol (UDP): A transfer protocol that does not rely on connections. This protocol does not support the concept of an acknowledgement. With UDP, you just set a destination port and send the data packet
+
+Virtual LAN (VLAN): It is a technique that lets you have multiple logical LANs operating on the same physical equipment
+
+VLAN header: A piece of data that indicates what the frame itself is. In a data packet it is followed by the EtherType
+
+
+
+        </p>
 
     </body>
 </html>
