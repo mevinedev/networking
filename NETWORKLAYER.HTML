@@ -1,0 +1,40 @@
+<HTml>
+    <head> the network layer</head>
+    <body>
+        Class C network only has eight bits of host ID space. For a Class C network, this comes out to 2 to the 8th power, or 256 addresses.
+        IP Class B addresses are those where the first two octets are used for the network ID and the second two are used for the host ID.
+        The flag field is used to indicate if a datagram is allowed to be fragmented or to indicate that the datagram has already been fragmented.
+        IP addresses belong to the networks and would be assigned by the LAN on which the device is connected.
+        <p>
+            subnetting <br>
+            subnetting is the process of taking a large network and splitting it up into many individual smaller subnetworks or subnets.
+            CIDR stands for Classless Inter-Domain Routing.
+            CIDR notation uses a forward slash and then lists the numbers of bits in the subnet mask.
+            A subnet mask is the same length as an IP address and has two sections: the subnet ID and the host ID. The beginning part, the subnet ID, is the part of the number with all the ones (in binary representation). The second part, the host ID, is the part with all the zeros. The purpose of the mask is to tell a router what part of an IP address is the subnet ID.
+            a subnet mask has 4 octets
+            You always lose two host IDs per network. For example, the subnet mask of 255.255.255.0 has the last octet available for host IDs (256 potential hosts). But remember, zero is generally not used, and 255 is normally reserved as a broadcast address.This means that, really, only the numbers 1-254 are available for assignment to a host.
+                  
+
+        </p>
+        <p>
+            Routing:
+            A router is a device that has at least two network interfaces since it has to be connected to two networks to do its job
+            ROUTING TABLE 4 parts: <br>
+            1. Destination network. This column would contain a row for each network that the router knows about
+            hop. This is the IP address of the next router that should receive data intended for the destination networking question
+            2. next hop, 3. total hops, 4. interface.
+
+            routing protocols. These are special protocols, the routers use to speak to each other in order to share what information they might have.
+            (a) interior gateway protocols, (b) exterior gateway protocols
+            <br>
+            Interior gateway protocols are used by routers to share information within a single autonomous system.
+            The two main types of interior gateway protocols are link state (autonomous to determine best path) routing protocols and distance vector( use list) protocols.
+
+
+        </p>
+        <p>
+            RFC stands for request for comments and is a longstanding way for those responsible for keeping the Internet running to agree upon the standard requirements to do so.
+            
+        </p>
+    </body>
+</HTml>
