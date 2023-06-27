@@ -1,5 +1,5 @@
 <HTml>
-    <head> The network layer</head>
+    <head> The Network layer</head>
     <body>
         Class C network only has eight bits of host ID space. For a Class C network, this comes out to 2 to the 8th power, or 256 addresses.
         IP Class B addresses are those where the first two octets are used for the network ID and the second two are used for the host ID.
@@ -12,7 +12,7 @@
             CIDR notation uses a forward slash and then lists the numbers of bits in the subnet mask.
             A subnet mask is the same length as an IP address and has two sections: the subnet ID and the host ID. The beginning part, the subnet ID, is the part of the number with all the ones (in binary representation). The second part, the host ID, is the part with all the zeros. The purpose of the mask is to tell a router what part of an IP address is the subnet ID.
             a subnet mask has 4 octets
-            You always lose two host IDs per network. For example, the subnet mask of 255.255.255.0 has the last octet available for host IDs (256 potential hosts). But remember, zero is generally not used, and 255 is normally reserved as a broadcast address.This means that, really, only the numbers 1-254 are available for assignment to a host.
+            You always lose two host IDs per network. For example, the subnet mask of 255.255.255.0 has the last octet available for host IDs (256 potential hosts). But remember, zero is generally not used, and 255 is normally reserved as a broadcast address.This means that only the numbers 1-254 are available for assignment to a host.
                   
 
         </p>
